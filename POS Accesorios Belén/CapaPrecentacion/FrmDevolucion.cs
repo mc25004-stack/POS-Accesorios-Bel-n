@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace POS_Accesorios_Belén
+namespace POS_Accesorios_Belén.CapaPrecentacion
 {
-    public partial class Form1 : Form
+    public partial class FrmDevolucion : Form
     {
-        public Form1()
+        public FrmDevolucion()
         {
             InitializeComponent();
         }

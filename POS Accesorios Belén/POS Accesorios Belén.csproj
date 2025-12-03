@@ -46,14 +46,88 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaEntidades\Producto.cs" />
+    <Compile Include="CapaPrecentacion\FrmDevolucion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="CapaPrecentacion\FrmDevolucion.Designer.cs">
+      <DependentUpon>FrmDevolucion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmGasto.Designer.cs">
+      <DependentUpon>FrmGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmPricipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmPricipal.Designer.cs">
+      <DependentUpon>FrmPricipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmDetalleVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmDetalleVenta.Designer.cs">
+      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmInventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmInventario.Designer.cs">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmProducto.Designer.cs">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmProveedor.Designer.cs">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmRegistroVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CapaPrecentacion\FrmRegistroVenta.Designer.cs">
+      <DependentUpon>FrmRegistroVenta.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapaPrecentacion\FrmDetalleVenta.resx">
+      <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmDevolucion.resx">
+      <DependentUpon>FrmDevolucion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmGasto.resx">
+      <DependentUpon>FrmGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmInventario.resx">
+      <DependentUpon>FrmInventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmPricipal.resx">
+      <DependentUpon>FrmPricipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmProducto.resx">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmProveedor.resx">
+      <DependentUpon>FrmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CapaPrecentacion\FrmRegistroVenta.resx">
+      <DependentUpon>FrmRegistroVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +149,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CapaNegocio\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
