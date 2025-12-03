@@ -16,5 +16,15 @@ namespace POS_Accesorios_Belén
         {
             InitializeComponent();
         }
+
+        private void gESTIÓNToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
