@@ -46,8 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapaDatos\ClienteDAL.cs" />
     <Compile Include="CapaDatos\Conexion.cs" />
+    <Compile Include="CapaDatos\ProductoDAL.cs" />
+    <Compile Include="CapaEntidades\Clientes.cs" />
     <Compile Include="CapaEntidades\Producto.cs" />
+    <Compile Include="CapaEntidades\Proveedor.cs" />
+    <Compile Include="CapaNegocio\ClienteBLL.cs" />
     <Compile Include="CapaPrecentacion\FrmDevolucion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +109,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CapaPrecentacion\FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CapaPrecentacion\FrmDetalleVenta.resx">
       <DependentUpon>FrmDetalleVenta.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,8 +158,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="CapaNegocio\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

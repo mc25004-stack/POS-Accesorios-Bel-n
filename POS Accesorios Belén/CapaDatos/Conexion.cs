@@ -8,6 +8,8 @@ namespace POS_Accesorios_Belén.CapaDatos
 {
     public class Conexion
     {
-
+        public static string Cadena = @"Data Source = Kevin;
+                                      Initial Catalog = POS_ACCESORIOSBELEN;
+                                      Integrated Security = True;";
     }
 }
